@@ -1,0 +1,68 @@
+From the meeting 5/7/2017 (Maura, Rebecca, Ian, Bin):
+
+Starting with small workshops to generate interest, gradually scaling up to larger workshops.
+First workshop date TBD, provisionally summer 2018 or winter 2018-19.
+Refocus on original concept of Field of the State (i.e. centered on the minzheng 民政 materials). 
+Develop a small proof-of-concept of part of desired toolset, by hand if necessary, to present at first workshop.
+Desirability of working with Taiwan collaborators, esp @ Sinica, Taida.
+
+From the conversation with Gail Clement 5/9/2017 (Ian, Maura):
+
+Gail suggested that we may be better served by using RDF ( Resource Description Framework), either instead of or in addition to Github.
+
+Gail’s main logic is that Github and RDF have different underlying data models: 
+
+GitHub works as a hierarchical tree, where one branch is the “master” and all other branches are children of the “master.” While it is possible to maintain these branches indefinitely, they are theoretically subordinate to the main branch. The tree structure also makes it impossible to merge branches from different repositories within the intrinsic structure of GitHub (although this can be done externally. 
+Summary: GitHub is very good for versioning, including with multiple users. It also works well for any objects with a clear “parent-child” relationship. It may not be the best tool for other purposes. 
+
+RDF works as a graph and does not assume hierarchies. It links any two “intellectual atomic units” by a “claim of semantic relationship,” without either intellectual unit needing to claim authority over the other. This can theoretically link any two concepts together without needing a hierarchical relationship or a “tree structure” (although it can represent trees, which are a subset of graphs). Because RDF is a free-form graph, it can be traversed by “crawling” and addressed using network statistics and visualizations. For example it is fairly trivial to identify all nodes that link to a given node, or even all nodes with second- or n-order connections to a given node (i.e. nodes that link to nodes that link to the target node, etc).
+RDF is now incorporated into W3C - the group that sets standards for the internet (here: https://www.w3.org/RDF/)
+Gail mentioned at least two off-the-shelf, commercial implementations of RDF annotation:
+Alchemy (https://www.ibm.com/watson/alchemy-api.html)
+The other one is not in my notes, although the w3 site does have a list of tools.
+She also mentioned several existing projects working with RDF tagging.
+
+In either infrastructure, each atomic unit needs a unique ID.
+
+Apparently intellectual property issues are well-known and have a common resolution, but I was not clear on what exactly it is.
+
+Following the meeting, Gail also told Ian that incorporating GitHub with RDF is an unsolved problem, and one that could potentially yield major funding. Often getting specific data-sets up is done as a small line-item of larger projects like this.
+
+From the conversation with Rob Doiel (5/9/2017, Maura, Ian):
+
+Granularity below document level is not built into GitHub. Workarounds: string distance from start of document (or other delimiter). Fuzzy search.
+
+Authorship attribution by sub-document unit is a non-trivial scripting problem.
+
+Importance of standards for hashing that are both machine and human-intelligible. Can write scripts to track references (i.e. in “project” document) back to repository.document.version, but these require that updates be tagged/commented with intelligible designations (i.e. type of update [translation/commentary/etc], number, what was updated) or rely on using cumbersome hash numbers.
+
+With fuzzy-search (for quotes) or string distance from delimiter, possible for references to track to location w/in document.
+
+http://schema.org/ for schemas for structured data.
+
+Importance on logging changes and dicussions on GitHub. Rob suggests reincorporating them into GitHub to preserve them.
+
+Standard for repositories to have README document and AUTHORS/COLLABORATORS document.
+
+Article shared by Rob http://blog.dshr.org/2017/05/distill-is-this-what-journals-should.html
+
+
+Decision following meetings with Gail and Rob: focus on an initial implimentation using GitHub, building standards for unique identifiers and ontologies for annotation (incl. Citation, commentary, translation, etc.). Good ontologies will ultimately build into an implimentation that could be developed w/in RDF standards.
+
+**
+
+To-dos (Summer 2017):
+1. Hu 戶 example (Maura, Ian). 
+GitHub repositories for proof-of-concept. Perhaps 3: 1 digital-text, 1 digital-image, 1 metadata/transcription of non-digital source.
+
+2. Naming conventions (Ian)
+a. Other disciplines
+b. Existing Sinological conventions from e.g. classical commentary (talk to Devin?).
+c. Kanripo (Ian to email Christian Wittern)
+d. Specific issues:
+i. How to cite a script
+ii. Unique, digital identifiers for:
+-Archives
+-Non-standard sources
+-Types of revision
+iii. Markus integration (Ian to talk to Brent Ho June-July ‘17).
