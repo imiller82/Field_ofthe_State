@@ -1,10 +1,31 @@
-From the meeting 5/7/2017 (Maura, Rebecca, Ian, Bin):
+From the meeting 5/6/2017 (Maura, Rebecca, Ian, Bin):
 
 Starting with small workshops to generate interest, gradually scaling up to larger workshops.
 First workshop date TBD, provisionally summer 2018 or winter 2018-19.
 Refocus on original concept of Field of the State (i.e. centered on the minzheng 民政 materials). 
 Develop a small proof-of-concept of part of desired toolset, by hand if necessary, to present at first workshop.
 Desirability of working with Taiwan collaborators, esp @ Sinica, Taida.
+
+***
+
+Links/tools from Cal Tech Data Carpentry Workshop 5/6 to 5/7/2017
+
+https://caltechlibrary.github.io/2017-05-06-caltech/ (workshop materials)
+https://github.com/caltechlibrary/shell-humanities (data used for workshop)
+http://pad.software-carpentry.org/2017-05-06-caltech (workshop etherpad)
+http://openrefine.org/ (data cleaning tool)
+https://zenodo.org/ (free, open-source data repository with permenant DOIs)
+https://data.caltech.edu/ (data repository w/ permenant DOIs for Caltech affiliates)
+http://jupyter.org/ (Jupyter notebook; online, open-source text editor with live code)
+
+https://authorcarpentry.github.io/ (author carpentry materials)
+https://orcid.org/ (unique DOIs for researchers)
+http://unpaywall.org/welcome (for finding articles outside of paywalls)
+http://www.bibtex.org/ (LaTex for citations)
+https://scholar.google.com/ (for finding scholarly citations in BibTex [including your own])
+https://impactstory.org (non-proprietary tool for assessing scholarly impact; works with ORCID)
+
+***
 
 From the conversation with Gail Clement 5/9/2017 (Ian, Maura):
 
@@ -28,6 +49,8 @@ Apparently intellectual property issues are well-known and have a common resolut
 
 Following the meeting, Gail also told Ian that incorporating GitHub with RDF is an unsolved problem, and one that could potentially yield major funding. Often getting specific data-sets up is done as a small line-item of larger projects like this.
 
+***
+
 From the conversation with Rob Doiel (5/9/2017, Maura, Ian):
 
 Granularity below document level is not built into GitHub. Workarounds: string distance from start of document (or other delimiter). Fuzzy search.
@@ -49,7 +72,7 @@ Article shared by Rob http://blog.dshr.org/2017/05/distill-is-this-what-journals
 
 Decision following meetings with Gail and Rob: focus on an initial implimentation using GitHub, building standards for unique identifiers and ontologies for annotation (incl. Citation, commentary, translation, etc.). Good ontologies will ultimately build into an implimentation that could be developed w/in RDF standards.
 
-**
+***
 
 To-dos (Summer 2017):
 1. Hu 戶 example (Maura, Ian). 
