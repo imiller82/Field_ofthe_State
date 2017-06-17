@@ -26,6 +26,59 @@ https://scholar.google.com/ (for finding scholarly citations in BibTex [includin
 https://impactstory.org (non-proprietary tool for assessing scholarly impact; works with ORCID)
 
 ***
+From the "pitch" given to Gail Clement and Rob Doil 5/9/2017 (Maura, Ian):
+
+Desired capabilities:
+Trace the provenence of
+  -texts
+  -modifications
+  -authorship (modern contributors, historical)
+  -data
+  
+Motivations:
+1. Transparent collaboration
+2. Consistent citations
+3. Links between sources and projects can be more granular and better ??(can't read the word)
+  -> motivates larger-scale collaboration
+4. Project reproducibility (i.e. source criticism)
+ 
+Concept:
+For each S (source, i.e. original text/image) and each P (project, i.e. researcher-generated):
+
+0. Generate unique SIDs for each object
+1. Generate links to parts of S (i.e. sub-document parts - text in corpus, page in text, etc). Generate citations.
+  -Direct reference to locations w/in S
+2. Links to notify author of P in case of (?modification?). Fuzzy and or strict overlap of S use between Ps
+
+3. Map each P onto each S, where link  = space in github environment AND unique ID (convertable to citation)
+  -Graphs linking dynamic/multiple S and P
+4. Preserve attribution for modificaitons to each S, S' (i.e. github "branch") and each P. THis should be legible for each component of P and hsould have active link back to the location in each S/S'
+5. Branches and links should be navigable to related S versions/branches
+6. Overview of project, including all components, can be presented to other scholars for review.
+
+7. Generate a list of all contributors to each S, S', P and what they contributed.
+
+
+Questions
+1. What can be done now with existing tools?
+2. What has to be developed?
+3. What can/should be developed first/now?
+
+*
+
+IMM notes 6/17/2017:
+The list of desired capabilities and motivations still holds. Based on conversations w/ Gail and Rob (see below), certain portions of the concept are problematic.
+
+Note I have preserved the 8 items of our concept as originally written, even though there is some overlap between them.
+
+Regarding Concept compoenents:
+0. Unique SIDs is the necessary starting point according to both Gail and Rob. Ian will work on this summer 2017.
+1/3 are non-trivial problems in github environment. Are solved under RDF, hence desirability of merging with RDF capabilities in mid-long term. But RDF does not yet have full off-the-shelf implimentations (?follow up with Gail?) 
+  -Partial solution is to generate unique IDs and standards for citation that are both machine-readible (i.e. with a bit of python code, etc) and human-intelligible
+2, 4 and parts of 5 and 7 are solved through the use of github, but only as long as projects are maintained as tree structures (i.e. generalized graph structures not supported) and only for document-level granularity
+6 can be solved using github to the extent that the project can be conceived within a tree structure
+
+***
 
 From the conversation with Gail Clement 5/9/2017 (Ian, Maura):
 
